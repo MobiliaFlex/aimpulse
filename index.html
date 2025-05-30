@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AImpulse | Transforme Seu Negócio com Inteligência Artificial</title>
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Domine a Inteligência Artificial e transforme seu negócio em 30 dias com o AImpulse. Aprenda estratégias práticas para automatizar processos, aumentar vendas e escalar seu negócio.">
+    <meta name="keywords" content="inteligência artificial, IA para negócios, automação, marketing com IA, vendas com IA, curso IA, AImpulse">
+    <meta name="author" content="AImpulse Academy">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aimpulse.com.br/">
+    <meta property="og:title" content="AImpulse | Transforme Seu Negócio com Inteligência Artificial">
+    <meta property="og:description" content="Domine a Inteligência Artificial e transforme seu negócio em 30 dias com o AImpulse. Aprenda estratégias práticas para automatizar processos, aumentar vendas e escalar seu negócio.">
+    <meta property="og:image" content="https://aimpulse.com.br/images/aimpulse-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aimpulse.com.br/">
+    <meta property="twitter:title" content="AImpulse | Transforme Seu Negócio com Inteligência Artificial">
+    <meta property="twitter:description" content="Domine a Inteligência Artificial e transforme seu negócio em 30 dias com o AImpulse. Aprenda estratégias práticas para automatizar processos, aumentar vendas e escalar seu negócio.">
+    <meta property="twitter:image" content="https://aimpulse.com.br/images/aimpulse-og-image.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Adicionar link para biblioteca de ícones (ex: Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --primary-blue: #2563EB; /* Azul Principal */
+            --primary-green: #10B981; /* Verde Principal */
+            --secondary-purple: #8B5CF6; /* Roxo Secundário */
+            --accent-yellow: #F59E0B; /* Amarelo Destaque */
+            --neutral-gray-lightest: #F9FAFB; /* Cinza Mais Claro */
+            --neutral-gray-light: #F3F4F6; /* Cinza Claro */
+            --neutral-gray-medium: #6B7280; /* Cinza Médio */
+            --neutral-gray-dark: #374151; /* Cinza Escuro */
+            --neutral-gray-darkest: #1F2937; /* Cinza Mais Escuro */
+            --white: #FFFFFF;
+            --black: #111827;
+            --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--secondary-purple) 0%, var(--accent-yellow) 100%);
+            --gradient-text: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 16px;
+            --border-radius-full: 9999px;
+            --transition-fast: all 0.2s ease-in-out;
+            --transition-medium: all 0.3s ease-in-out;
+            --transition-slow: all 0.5s ease-in-out;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px; /* Base font size */
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--neutral-gray-dark);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--neutral-gray-darkest);
+            line-height: 1.3;
+            margin-bottom: 0.75em; /* Default bottom margin */
+        }
+
+        h1 { font-size: 3rem; font-weight: 800; } /* 48px */
+        h2 { font-size: 2.5rem; font-weight: 800; } /* 40px */
+        h3 { font-size: 1.875rem; font-weight: 700; } /* 30px */
+        h4 { font-size: 1.5rem; font-weight: 700; } /* 24px */
+        h5 { font-size: 1.25rem; font-weight: 600; } /* 20px */
+        h6 { font-size: 1rem; font-weight: 600; } /* 16px */
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--neutral-gray-medium);
+            font-size: 1rem; /* 16px */
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        a:hover {
+            color: var(--primary-green);
+            text-decoration: underline;
+        }
+
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul, ol {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        button, input, select, textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            color: inherit;
+        }
+
+        /* Utility Classes */
+        .text-gradient {
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title h2 {
+            margin-bottom: 16px;
+        }
+
+        .section-title p {
+            font-size: 1.125rem; /* 18px */
+            color: var(--neutral-gray-medium);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: var(--white);
+            border: none;
+            padding: 14px 32px;
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            font-size: 1rem; /* 16px */
+            cursor: pointer;
+            transition: var(--transition-medium);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: var(--shadow-lg);
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .secondary-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            padding: 12px 30px;
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            font-size: 1rem; /* 16px */
+            cursor: pointer;
+            transition: var(--transition-medium);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .secondary-button:hover {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            padding: 12px 0;
+        }
+
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 45px; /* Increased size */
+            margin-right: 12px;
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Bounce effect */
+        }
+        .logo:hover img {
+            transform: rotate(-15deg) scale(1.1);
+        }
+
+        .logo h1 {
+            font-size: 1.75rem; /* 28px */
+            font-weight: 900; /* Bolder */
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--neutral-gray-darkest);
+            font-weight: 600;
+            font-size: 1rem; /* 16px */
+            position: relative;
+            transition: color 0.3s ease;
+            padding-bottom: 5px;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            border-radius: 2px;
+            transition: width 0.4s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-blue);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .header-cta .cta-button {
+            padding: 10px 24px;
+            font-size: 0.95rem; /* 15px */
+            margin-left: 40px;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--neutral-gray-darkest);
+            cursor: pointer;
+            z-index: 1100;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 200px 0 140px;
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            position: relative;
+            overflow: hidden;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(180deg, rgba(17, 24, 39, 0.8) 0%, rgba(17, 24, 39, 0.6) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.75rem; /* 60px */
+            font-weight: 900;
+            margin-bottom: 24px;
+            line-height: 1.15;
+            color: var(--white);
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero .subheadline {
+            font-size: 1.375rem; /* 22px */
+            color: var(--neutral-gray-light);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out 0.3s;
+            animation-fill-mode: backwards;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            animation: fadeInUp 1s ease-out 0.6s;
+            animation-fill-mode: backwards;
+            margin-bottom: 60px;
+        }
+
+        .hero .cta-button {
+            padding: 16px 40px;
+            font-size: 1.1rem;
+        }
+
+        .hero .secondary-button {
+            padding: 14px 38px;
+            font-size: 1.1rem;
+            border-color: var(--white);
+            color: var(--white);
+            background: transparent;
+        }
+
+        .hero .secondary-button:hover {
+            background-color: var(--white);
+            color: var(--primary-blue);
+        }
+
+        .social-proof-counter {
+            margin-top: 60px;
+            animation: fadeInUp 1s ease-out 0.9s;
+            animation-fill-mode: backwards;
+        }
+
+        .social-proof-counter p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--neutral-gray-light);
+            margin-bottom: 0;
+        }
+
+        .social-proof-counter span {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--accent-yellow);
+            margin: 0 5px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            color: var(--white);
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background-color: var(--neutral-gray-lightest);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .benefit-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 40px 30px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-medium);
+            border-left: 5px solid transparent;
+            text-align: center;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            border-left-color: var(--primary-green);
+        }
+
+        .benefit-icon {
+            width: 72px;
+            height: 72px;
+            background: var(--gradient-primary);
+            border-radius: var(--border-radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px auto;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-fast);
+        }
+
+        .benefit-card:hover .benefit-icon {
+            transform: scale(1.1) rotate(-10deg);
+        }
+
+        .benefit-icon i {
+            color: var(--white);
+            font-size: 32px;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.375rem; /* 22px */
+            margin-bottom: 16px;
+            color: var(--neutral-gray-darkest);
+        }
+
+        .benefit-card p {
+            color: var(--neutral-gray-medium);
+            font-size: 1rem; /* 16px */
+            margin-bottom: 0;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            background-color: var(--white);
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        /* Add dashed line connector */
+        .steps-container::before {
+            content: '';
+            position: absolute;
+            top: 40px; /* Adjust based on icon size */
+            left: 15%; /* Start after first item */
+            right: 15%; /* End before last item */
+            height: 2px;
+            background-image: linear-gradient(to right, var(--primary-blue) 50%, transparent 50%);
+            background-size: 16px 2px;
+            background-repeat: repeat-x;
+            z-index: 0;
+        }
+
+        .step-card {
+            text-align: center;
+            flex: 1;
+            max-width: 280px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px auto;
+            font-size: 2rem;
+            font-weight: 800;
+            box-shadow: var(--shadow-md);
+            border: 4px solid var(--white);
+        }
+
+        .step-card h5 {
+            font-size: 1.25rem; /* 20px */
+            margin-bottom: 12px;
+            color: var(--neutral-gray-darkest);
+        }
+
+        .step-card p {
+            color: var(--neutral-gray-medium);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* Modules Section */
+        .modules {
+            background-color: var(--neutral-gray-lightest);
+        }
+
+        .modules-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .module-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            transition: var(--transition-medium);
+            border: 1px solid #e5e7eb;
+        }
+
+        .module-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .module-number {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 30px;
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 100px;
+            text-align: center;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        .module-content {
+            padding: 30px 40px;
+            flex: 1;
+        }
+
+        .module-content h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--neutral-gray-darkest);
+        }
+
+        .module-content p {
+            color: var(--neutral-gray-medium);
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .module-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .module-topic {
+            background-color: var(--neutral-gray-light);
+            padding: 6px 16px;
+            border-radius: var(--border-radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--neutral-gray-dark);
+            transition: var(--transition-fast);
+        }
+
+        .module-topic:hover {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: var(--neutral-gray-lightest);
+            border-radius: var(--border-radius-lg);
+            padding: 40px 30px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 80px;
+            color: var(--primary-blue);
+            opacity: 0.1;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-content {
+            font-size: 1.05rem;
+            color: var(--neutral-gray-dark);
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 16px;
+            border: 3px solid var(--primary-green);
+            object-fit: cover;
+        }
+
+        .author-info h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--neutral-gray-darkest);
+            margin-bottom: 2px;
+        }
+
+        .author-info p {
+            font-size: 0.95rem;
+            color: var(--neutral-gray-medium);
+            margin-bottom: 0;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background-color: var(--neutral-gray-lightest);
+        }
+
+        .pricing-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .pricing-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 40px 30px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition-medium);
+            border: 1px solid #e5e7eb;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary-blue);
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .pricing-card.featured:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 8px 40px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            transform: rotate(45deg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pricing-header h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--neutral-gray-darkest);
+            margin-bottom: 12px;
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--neutral-gray-darkest);
+            margin-bottom: 4px;
+            line-height: 1;
+        }
+
+        .price .currency {
+            font-size: 1.5rem;
+            font-weight: 600;
+            vertical-align: super;
+            margin-right: 4px;
+        }
+
+        .price-period {
+            color: var(--neutral-gray-medium);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .pricing-features {
+            margin: 30px 0;
+            flex-grow: 1;
+        }
+
+        .pricing-features ul li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            color: var(--neutral-gray-dark);
+            font-size: 1rem;
+        }
+
+        .pricing-features ul li::before {
+            content: '✓';
+            color: var(--primary-green);
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .pricing-card .cta-button {
+            width: 100%;
+            padding: 14px 20px;
+            font-size: 1rem;
+        }
+
+        .pricing-card .secondary-button {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 1rem;
+        }
+
+        .pricing-guarantee {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--neutral-gray-medium);
+            font-size: 0.95rem;
+        }
+
+        .pricing-guarantee i {
+            color: var(--primary-blue);
+            margin-right: 5px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 16px;
+            border-radius: var(--border-radius-md);
+            background-color: var(--neutral-gray-lightest);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-fast);
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--neutral-gray-darkest);
+            transition: background-color 0.2s ease;
+        }
+        .faq-question:hover {
+            background-color: var(--neutral-gray-light);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+        }
+
+        .faq-answer {
+            padding: 0 30px 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            color: var(--neutral-gray-medium);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px; /* Adjust as needed */
+            padding-top: 10px;
+            padding-bottom: 25px;
+        }
+
+        .faq-contact-prompt {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1rem;
+            color: var(--neutral-gray-medium);
+        }
+        .faq-contact-prompt a {
+            font-weight: 600;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: var(--gradient-primary);
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Add decorative elements */
+        .final-cta::before, .final-cta::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+        .final-cta::before { top: -50px; left: -50px; }
+        .final-cta::after { bottom: -80px; right: -80px; width: 300px; height: 300px; }
+
+        .final-cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 {
+            font-size: 2.8rem; /* 45px */
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 20px;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+        }
+
+        .final-cta p {
+            font-size: 1.2rem; /* 19px */
+            color: var(--neutral-gray-light);
+            margin-bottom: 40px;
+        }
+
+        .final-cta .cta-button {
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 18px 45px;
+            font-size: 1.15rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .final-cta .cta-button:hover {
+            background: var(--neutral-gray-lightest);
+            color: var(--primary-blue);
+            transform: translateY(-4px) scale(1.04);
+        }
+
+        .trust-elements {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 0.9rem;
+            color: var(--neutral-gray-light);
+            opacity: 0.9;
+        }
+        .trust-elements i {
+            margin-right: 6px;
+            color: var(--accent-yellow);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--neutral-gray-darkest);
+            color: var(--neutral-gray-medium);
+            padding: 60px 0 30px;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h6 {
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: var(--neutral-gray-medium);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+        .footer-col ul li a:hover {
+            color: var(--white);
+            text-decoration: none;
+            padding-left: 5px;
+        }
+
+        .footer-socials a {
+            color: var(--neutral-gray-medium);
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: var(--transition-fast);
+        }
+        .footer-socials a:hover {
+            color: var(--white);
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--neutral-gray-dark);
+            padding-top: 30px;
+            text-align: center;
+            color: var(--neutral-gray-medium);
+        }
+
+        /* Floating Elements */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 998;
+            transition: var(--transition-medium);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: var(--shadow-xl);
+            background-color: #128C7E;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 100px; /* Above WhatsApp */
+            right: 30px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-md);
+            z-index: 997;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-medium);
+            cursor: pointer;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            bottom: 110px; /* Adjust position when visible */
+        }
+        .back-to-top:hover {
+            background-color: var(--primary-green);
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            h1 { font-size: 2.8rem; } /* ~45px */
+            h2 { font-size: 2.2rem; } /* ~35px */
+            .hero h1 { font-size: 3rem; } /* ~48px */
+            .hero .subheadline { font-size: 1.2rem; } /* ~19px */
+            .section-padding { padding: 80px 0; }
+            nav ul li { margin-left: 25px; }
+            .header-cta .cta-button { margin-left: 25px; }
+            .steps-container { flex-direction: column; align-items: center; gap: 50px; }
+            .steps-container::before { display: none; /* Hide line on smaller screens */ }
+            .step-card { max-width: 400px; }
+            .pricing-options { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+        }
+
+        @media (max-width: 768px) {
+            html { font-size: 15px; }
+            h1 { font-size: 2.5rem; } /* ~37px */
+            h2 { font-size: 2rem; } /* ~30px */
+            h3 { font-size: 1.6rem; } /* ~24px */
+            .hero { padding: 160px 0 100px; }
+            .hero h1 { font-size: 2.5rem; } /* ~37px */
+            .hero .subheadline { font-size: 1.1rem; } /* ~16px */
+            .hero-cta { flex-direction: column; gap: 16px; align-items: center; }
+            .section-padding { padding: 60px 0; }
+            .section-title h2 { font-size: 2rem; }
+            .section-title p { font-size: 1rem; }
+
+            /* Mobile Menu */
+            nav {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(5px);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 1050;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.4s ease, visibility 0.4s ease;
+            }
+            nav.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+            nav ul li {
+                margin: 20px 0;
+                margin-left: 0;
+            }
+            nav ul li a {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            .header-cta {
+                margin-top: 30px;
+            }
+            .header-cta .cta-button {
+                margin-left: 0;
+                padding: 14px 30px;
+                font-size: 1.2rem;
+            }
+            .mobile-menu-toggle {
+                display: block;
+            }
+            /* End Mobile Menu */
+
+            .benefits-grid { grid-template-columns: 1fr; gap: 30px; }
+            .module-card { flex-direction: column; }
+            .module-number { writing-mode: horizontal-tb; transform: none; min-width: auto; padding: 20px; font-size: 2rem; }
+            .module-content { padding: 30px; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .pricing-options { grid-template-columns: 1fr; }
+            .pricing-card.featured { transform: scale(1); } /* No scale on mobile */
+            .pricing-card:hover { transform: translateY(-5px) scale(1); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .footer-col { margin-bottom: 20px; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            h1 { font-size: 2.2rem; } /* ~33px */
+            .hero h1 { font-size: 2.2rem; }
+            .hero .subheadline { font-size: 1rem; }
+            .logo h1 { font-size: 1.5rem; }
+            .logo img { height: 40px; }
+            .cta-button, .secondary-button { width: 100%; padding-left: 15px; padding-right: 15px; }
+            .hero .cta-button, .hero .secondary-button { font-size: 1rem; padding: 14px 20px; }
+            .benefit-card { padding: 30px 20px; }
+            .step-card { padding: 0 10px; }
+            .module-content { padding: 25px; }
+            .testimonial-card { padding: 30px 25px; }
+            .pricing-card { padding: 30px; }
+            .faq-question { padding: 15px 20px; font-size: 1rem; }
+            .faq-answer { padding: 0 20px 15px; }
+            .final-cta h2 { font-size: 2.2rem; }
+            .final-cta p { font-size: 1rem; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-col { text-align: center; }
+            .footer-socials { text-align: center; margin-top: 10px; }
+            .footer-socials a { margin: 0 10px; }
+            .footer-bottom { font-size: 0.8rem; }
+            .whatsapp-float { width: 50px; height: 50px; font-size: 1.8rem; bottom: 20px; right: 20px; }
+            .back-to-top { width: 45px; height: 45px; font-size: 1.3rem; right: 20px; bottom: 80px; }
+            .back-to-top.visible { bottom: 85px; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-15px); }
+            60% { transform: translateX(-50%) translateY(-8px); }
+        }
+
+        /* Add classes for elements to animate on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.fade-in {
+            opacity: 1;
+        }
+        .animate-on-scroll.fade-in-up {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .animate-on-scroll.from-left {
+            transform: translateX(-50px);
+        }
+        .animate-on-scroll.from-right {
+            transform: translateX(50px);
+        }
+        .animate-on-scroll.from-bottom {
+            transform: translateY(50px);
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+    </style>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/aimpulse-logo.png" alt="AImpulse Logo">
+                <h1>AImpulse</h1>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#how-it-works">Como Funciona</a></li>
+                    <li><a href="#modules">Módulos</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#pricing">Planos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="header-cta">
+                    <a href="#pricing" class="cta-button">Começar Agora</a>
+                </div>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Domine a Inteligência Artificial e Transforme seu Negócio</h1>
+            <p class="subheadline">Aprenda a usar IA para automatizar processos, criar conteúdo de alta qualidade e aumentar suas vendas em até 300% - mesmo que você nunca tenha usado inteligência artificial antes.</p>
+            <div class="hero-cta">
+                <a href="#pricing" class="cta-button">Quero Transformar Meu Negócio</a>
+                <a href="#modules" class="secondary-button">Ver Conteúdo do Curso</a>
+            </div>
+            <div class="social-proof-counter">
+                <p>Mais de <span>1.500+</span> empreendedores já transformaram seus negócios</p>
+            </div>
+        </div>
+        <a href="#benefits" class="scroll-indicator" aria-label="Rolar para baixo">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits section-padding" id="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Por Que Usar IA no Seu Negócio?</h2>
+                <p>A inteligência artificial está revolucionando o mercado. Quem não se adaptar ficará para trás. Veja como o AImpulse pode transformar sua empresa:</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card animate-on-scroll from-bottom">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>Aumento de Produtividade</h4>
+                    <p>Reduza em até 70% o tempo gasto em tarefas repetitivas como criação de conteúdo, atendimento ao cliente e análise de dados.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll from-bottom">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Crescimento de Vendas</h4>
+                    <p>Nossos alunos relatam aumento médio de 215% nas vendas após implementar as estratégias de IA para marketing e conversão.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll from-bottom">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Atendimento Escalável</h4>
+                    <p>Atenda centenas de clientes simultaneamente com chatbots inteligentes que resolvem dúvidas e aumentam conversões 24/7.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll from-bottom">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Insights Estratégicos</h4>
+                    <p>Descubra oportunidades ocultas em seus dados e antecipe tendências de mercado com análises preditivas avançadas.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll from-bottom">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h4>Redução de Custos</h4>
+                    <p>Economize até 60% em custos operacionais automatizando processos e otimizando recursos com ferramentas de IA acessíveis.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll from-bottom">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Expansão de Mercado</h4>
+                    <p>Alcance novos mercados e públicos com estratégias de internacionalização e localização potencializadas por IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works section-padding" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como o AImpulse Funciona</h2>
+                <p>Uma metodologia simples e eficaz para implementar IA no seu negócio, mesmo que você não tenha conhecimento técnico.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card animate-on-scroll from-left">
+                    <div class="step-number">1</div>
+                    <h5>Aprenda</h5>
+                    <p>Acesse aulas práticas e diretas ao ponto, sem jargões técnicos ou complicações.</p>
+                </div>
+                <div class="step-card animate-on-scroll from-bottom">
+                    <div class="step-number">2</div>
+                    <h5>Aplique</h5>
+                    <p>Use nossos templates e prompts prontos para implementar IA no seu negócio imediatamente.</p>
+                </div>
+                <div class="step-card animate-on-scroll from-bottom">
+                    <div class="step-number">3</div>
+                    <h5>Automatize</h5>
+                    <p>Configure sistemas que trabalham 24/7, liberando seu tempo para o que realmente importa.</p>
+                </div>
+                <div class="step-card animate-on-scroll from-right">
+                    <div class="step-number">4</div>
+                    <h5>Escale</h5>
+                    <p>Multiplique resultados sem multiplicar esforços, expandindo seu negócio com IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules section-padding" id="modules">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conteúdo Completo do Curso</h2>
+                <p>5 módulos práticos com mais de 30 aulas para transformar seu negócio com inteligência artificial</p>
+            </div>
+            <div class="modules-container">
+                <div class="module-card animate-on-scroll from-left">
+                    <div class="module-number">01</div>
+                    <div class="module-content">
+                        <h4>Fundamentos de IA para Empreendedores</h4>
+                        <p>Entenda como a IA funciona e como ela pode ser aplicada em qualquer negócio, sem precisar de conhecimento técnico ou programação.</p>
+                        <div class="module-topics">
+                            <span class="module-topic">Conceitos Básicos</span>
+                            <span class="module-topic">Ferramentas Essenciais</span>
+                            <span class="module-topic">Prompts Eficientes</span>
+                            <span class="module-topic">Casos de Uso</span>
+                            <span class="module-topic">Ética e Limitações</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="module-card animate-on-scroll from-right">
+                    <div class="module-number">02</div>
+                    <div class="module-content">
+                        <h4>Criação de Conteúdo com IA</h4>
+                        <p>Produza textos, imagens e vídeos de alta qualidade em minutos, economizando tempo e recursos em marketing e comunicação.</p>
+                        <div class="module-topics">
+                            <span class="module-topic">Copywriting</span>
+                            <span class="module-topic">Design Gráfico</span>
+                            <span class="module-topic">Edição de Vídeo</span>
+                            <span class="module-topic">SEO Avançado</span>
+                            <span class="module-topic">Redes Sociais</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="module-card animate-on-scroll from-left">
+                    <div class="module-number">03</div>
+                    <div class="module-content">
+                        <h4>Marketing e Vendas com IA</h4>
+                        <p>Aumente suas conversões com estratégias de marketing personalizadas e automações de vendas que funcionam 24 horas por dia.</p>
+                        <div class="module-topics">
+                            <span class="module-topic">Funis Automatizados</span>
+                            <span class="module-topic">Segmentação Avançada</span>
+                            <span class="module-topic">Copywriting Persuasivo</span>
+                            <span class="module-topic">Análise de Dados</span>
+                            <span class="module-topic">Otimização de Conversão</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="module-card animate-on-scroll from-right">
+                    <div class="module-number">04</div>
+                    <div class="module-content">
+                        <h4>Atendimento ao Cliente com IA</h4>
+                        <p>Implemente chatbots e sistemas de suporte que resolvem problemas, aumentam satisfação e geram vendas automaticamente.</p>
+                        <div class="module-topics">
+                            <span class="module-topic">Chatbots Inteligentes</span>
+                            <span class="module-topic">Automação de Respostas</span>
+                            <span class="module-topic">Personalização em Escala</span>
+                            <span class="module-topic">Análise de Sentimento</span>
+                            <span class="module-topic">Integração Multicanal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="module-card animate-on-scroll from-bottom">
+                    <div class="module-number">05</div>
+                    <div class="module-content">
+                        <h4>Escalando seu Negócio com IA</h4>
+                        <p>Transforme seu modelo de negócio para crescer de forma sustentável, usando IA para automatizar processos e tomar decisões estratégicas.</p>
+                        <div class="module-topics">
+                            <span class="module-topic">Estratégias de Automação</span>
+                            <span class="module-topic">Desenvolvimento de Produtos</span>
+                            <span class="module-topic">Expansão Internacional</span>
+                            <span class="module-topic">Tendências Futuras</span>
+                            <span class="module-topic">Plano de Implementação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>O Que Nossos Alunos Dizem</h2>
+                <p>Histórias reais de empreendedores que transformaram seus negócios com o AImpulse</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll from-left">
+                    <div class="testimonial-content">
+                        "Minha agência de marketing estava estagnada. Com as estratégias do AImpulse, conseguimos triplicar a produção de conteúdo e aumentar em 187% o ROI dos nossos clientes em apenas 2 meses!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="Mariana Costa">
+                        <div class="author-info">
+                            <h5>Mariana Costa</h5>
+                            <p>CEO, Agência Criativa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll from-bottom">
+                    <div class="testimonial-content">
+                        "Reduzi em 60% o tempo gasto com tarefas administrativas e pude focar na estratégia. A IA deixou de ser um bicho de sete cabeças e se tornou minha maior aliada. Recomendo demais!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="João Ferreira">
+                        <div class="author-info">
+                            <h5>João Ferreira</h5>
+                            <p>Fundador, Startup SaaS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll from-right">
+                    <div class="testimonial-content">
+                        "O módulo de atendimento ao cliente mudou o jogo para meu e-commerce. Implementei o chatbot e minhas vendas aumentaram 35% no primeiro mês. Suporte incrível!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-3.jpg" alt="Sofia Oliveira">
+                        <div class="author-info">
+                            <h5>Sofia Oliveira</h5>
+                            <p>Loja Online de Moda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section-padding" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Escolha o Plano Ideal Para Impulsionar Seu Negócio</h2>
+                <p>Invista no futuro da sua empresa com um plano flexível e acessível, projetado para gerar ROI rapidamente.</p>
+            </div>
+            <div class="pricing-options">
+                <div class="pricing-card animate-on-scroll from-left">
+                    <div class="pricing-header">
+                        <h4>Plano Essencial</h4>
+                        <div class="price"><span class="currency">R$</span>49</div>
+                        <div class="price-period">Pagamento único</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Acesso completo aos 5 Módulos</li>
+                            <li>+100 Templates e Prompts</li>
+                            <li>Comunidade Exclusiva</li>
+                            <li>Certificado de Conclusão</li>
+                            <li>Acesso por 1 ano</li>
+                            <li>Suporte via Comunidade</li>
+                        </ul>
+                    </div>
+                    <a href="https://pay.kiwify.com.br/aimpulse-essencial" class="cta-button">COMEÇAR COM ESSENCIAL</a>
+                </div>
+                
+                <div class="pricing-card featured animate-on-scroll from-bottom">
+                    <div class="featured-badge">MAIS POPULAR</div>
+                    <div class="pricing-header">
+                        <h4>Plano Premium</h4>
+                        <div class="price"><span class="currency">R$</span>99</div>
+                        <div class="price-period">Pagamento único</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Acesso completo aos 5 Módulos</li>
+                            <li>+200 Templates e Prompts Premium</li>
+                            <li>Comunidade Exclusiva VIP</li>
+                            <li>Certificado Verificável</li>
+                            <li>Acesso Vitalício</li>
+                            <li>Suporte Prioritário</li>
+                            <li>Sessões de Dúvidas ao Vivo</li>
+                            <li>Masterclasses Bônus</li>
+                            <li>Atualizações Futuras Gratuitas</li>
+                        </ul>
+                    </div>
+                    <a href="https://pay.kiwify.com.br/aimpulse-premium" class="cta-button">ESCOLHER PREMIUM</a>
+                </div>
+
+                <div class="pricing-card animate-on-scroll from-right">
+                     <div class="pricing-header">
+                        <h4>Plano Empresa</h4>
+                        <div class="price">Sob Consulta</div>
+                        <div class="price-period">Para equipes e soluções customizadas</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Tudo do Premium</li>
+                            <li>Licenças para Múltiplos Usuários</li>
+                            <li>Treinamento Personalizado</li>
+                            <li>Consultoria Estratégica</li>
+                            <li>Implementação Assistida</li>
+                            <li>Suporte Dedicado</li>
+                        </ul>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Empresa%20do%20AImpulse" class="secondary-button" style="border-color: var(--primary-green); color: var(--primary-green);">SOLICITAR CONTATO</a>
+                </div>
+            </div>
+            <div class="pricing-guarantee">
+                <i class="fas fa-shield-alt"></i> Pagamento 100% seguro &nbsp;&nbsp; | &nbsp;&nbsp; <i class="fas fa-undo-alt"></i> Garantia incondicional de 7 dias
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perguntas Frequentes</h2>
+                <p>Respondemos às dúvidas mais comuns sobre o AImpulse</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item animate-on-scroll from-bottom">
+                    <div class="faq-question">
+                        Preciso ser expert em tecnologia?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutamente não! O AImpulse foi criado para empreendedores, mesmo que você nunca tenha usado IA antes. Nossa metodologia é passo a passo e focada em aplicações práticas, sem complicação. Tudo é explicado de forma simples e direta, com exemplos reais e templates prontos para usar.
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll from-bottom">
+                    <div class="faq-question">
+                        Em quanto tempo vejo resultados?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Muitos alunos relatam melhorias significativas em produtividade e automação nas primeiras semanas. Com dedicação, você pode esperar resultados mensuráveis em vendas e eficiência em menos de 30 dias. Nossos templates e prompts prontos permitem implementação imediata das estratégias.
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll from-bottom">
+                    <div class="faq-question">
+                        O curso serve para o meu nicho de mercado?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! As estratégias e ferramentas ensinadas são aplicáveis a praticamente qualquer tipo de negócio: e-commerce, serviços, infoprodutos, agências, consultorias, negócios locais e muito mais. A IA é uma tecnologia versátil que pode ser adaptada para diferentes setores e necessidades específicas.
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll from-bottom">
+                    <div class="faq-question">
+                        Preciso investir muito em ferramentas?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Ensinamos a usar uma combinação de ferramentas gratuitas e pagas acessíveis. Muitas estratégias podem ser implementadas com custo zero ou muito baixo. O investimento em ferramentas pagas é opcional e depende da sua necessidade de escala. Mostramos como maximizar resultados com o mínimo de investimento.
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll from-bottom">
+                    <div class="faq-question">
+                        E se eu não gostar do curso?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sua satisfação é nossa prioridade. Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você achar que o curso não é para você, basta nos enviar um e-mail e reembolsaremos 100% do seu investimento, sem burocracia e sem perguntas.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-contact-prompt">
+                Ainda tem dúvidas? <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá,%20tenho%20uma%20dúvida%20sobre%20o%20AImpulse">Fale com nossa equipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="final-cta">
+        <div class="container final-cta-content">
+            <h2>Não Fique Para Trás na Revolução da IA</h2>
+            <p>A inteligência artificial não é mais o futuro, é o presente. Capacite seu negócio com as ferramentas e estratégias que estão definindo os vencedores de amanhã.</p>
+            <a href="#pricing" class="cta-button">QUERO TRANSFORMAR MEU NEGÓCIO AGORA</a>
+            <div class="trust-elements">
+                <span><i class="fas fa-lock"></i> Pagamento Seguro</span>
+                <span><i class="fas fa-shield-alt"></i> Garantia de 7 Dias</span>
+                <span><i class="fas fa-medal"></i> Satisfação Garantida</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h6>AImpulse</h6>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#modules">Módulos</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#pricing">Planos</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h6>Suporte</h6>
+                    <ul>
+                        <li><a href="mailto:contato@aimpulse.com.br">E-mail de Contato</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5511999999999">WhatsApp</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Política de Reembolso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h6>Siga-nos</h6>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AImpulse. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Elements -->
+    <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20AImpulse" class="whatsapp-float" aria-label="Contato WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                mobileMenuToggle.innerHTML = mainNav.classList.contains('active') 
+                    ? '<i class="fas fa-times"></i>' 
+                    : '<i class="fas fa-bars"></i>';
+            });
+        }
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                if (mobileMenuToggle) {
+                    mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all other items
+                document.querySelectorAll('.faq-item.active').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    
+                    window.scrollTo({
+                        top: targetPosition - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
+        
+        const checkIfInView = () => {
+            const windowHeight = window.innerHeight;
+            const windowTopPosition = window.scrollY;
+            const windowBottomPosition = windowTopPosition + windowHeight;
+            
+            animateOnScrollElements.forEach(element => {
+                const elementHeight = element.offsetHeight;
+                const elementTopPosition = element.offsetTop;
+                const elementBottomPosition = elementTopPosition + elementHeight;
+                
+                // Check if element is in viewport
+                if (
+                    (elementBottomPosition >= windowTopPosition) &&
+                    (elementTopPosition <= windowBottomPosition - 100)
+                ) {
+                    element.classList.add('is-visible');
+                }
+            });
+        };
+        
+        // Initial check on page load
+        window.addEventListener('load', checkIfInView);
+        // Check on scroll
+        window.addEventListener('scroll', checkIfInView);
+        
+        // Pixel de Conversão do Facebook
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '000000000000000');
+        fbq('track', 'PageView');
+    </script>
+    <!-- Pixel do Facebook (noscript) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=000000000000000&ev=PageView&noscript=1"
+    /></noscript>
+</body>
+</html>
